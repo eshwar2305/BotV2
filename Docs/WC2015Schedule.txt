@@ -1,0 +1,49 @@
+1,New Zealand,Sri Lanka,NULL,2015-02-13 14:00:00,NOT_STARTED,WC2015,Hagley Oval Christchurch,25,OPEN
+2,Australia,England,NULL,2015-02-13 19:30:00,NOT_STARTED,WC2015,Melbourne Cricket Ground,25,OPEN
+3,South Africa,Zimbabwe,NULL,2015-02-14 17:00:00,NOT_STARTED,WC2015,Seddon Park Hamilton,25,OPEN
+4,India,Pakistan,NULL,2015-02-14 19:30:00,NOT_STARTED,WC2015,Adelaide Oval,25,OPEN
+5,Ireland,West Indies,NULL,2015-02-15 14:00:00,NOT_STARTED,WC2015,Saxton Oval Nelson,25,OPEN
+6,New Zealand,Scotland,NULL,2015-02-16 14:00:00,NOT_STARTED,WC2015,University Oval Dunedin,25,OPEN
+7,Afghanistan,Bangladesh,NULL,2015-02-17 19:30:00,NOT_STARTED,WC2015,Manuka Oval Canberra,25,OPEN
+8,United Arab Emirates,Zimbabwe,NULL,2015-02-18 14:00:00,NOT_STARTED,WC2015,Saxton Oval Nelson,25,OPEN
+9,New Zealand,England,NULL,2015-02-19 17:00:00,NOT_STARTED,WC2015,Westpac Stadium Wellington,25,OPEN
+10,Pakistan,West Indies,NULL,2015-02-20 14:00:00,NOT_STARTED,WC2015,Hagley Oval Christchurch,25,OPEN
+11,Australia,Bangladesh,NULL,2015-02-20 19:30:00,NOT_STARTED,WC2015,Brisbane Cricket Ground Woolloongabba Brisbane,25,OPEN
+12,Afghanistan,Sri Lanka,NULL,2015-02-21 14:00:00,NOT_STARTED,WC2015,University Oval Dunedin,25,OPEN
+13,India,South Africa,NULL,2015-02-21 19:30:00,NOT_STARTED,WC2015,Melbourne Cricket Ground,25,OPEN
+14,England,Scotland,NULL,2015-02-22 14:00:00,NOT_STARTED,WC2015,Hagley Oval Christchurch,25,OPEN
+15,West Indies,Zimbabwe,NULL,2015-02-23 19:30:00,NOT_STARTED,WC2015,Manuka Oval Canberra,25,OPEN
+16,Ireland,United Arab Emirates,NULL,2015-02-24 19:30:00,NOT_STARTED,WC2015,Brisbane Cricket Ground Woolloongabba Brisbane,25,OPEN
+17,Afghanistan,Scotland,NULL,2015-02-25 14:00:00,NOT_STARTED,WC2015,University Oval Dunedin,25,OPEN
+18,Bangladesh,Sri Lanka,NULL,2015-02-25 19:30:00,NOT_STARTED,WC2015,Melbourne Cricket Ground,25,OPEN
+19,South Africa,West Indies,NULL,2015-02-26 19:30:00,NOT_STARTED,WC2015,Sydney Cricket Ground,25,OPEN
+20,New Zealand,Australia,NULL,2015-02-27 17:00:00,NOT_STARTED,WC2015,Eden Park Auckland,25,OPEN
+21,India,United Arab Emirates,NULL,2015-02-27 22:30:00,NOT_STARTED,WC2015,Western Australia Cricket Association Ground Perth,25,OPEN
+22,England,Sri Lanka,NULL,2015-02–28 14:00:00,NOT_STARTED,WC2015,Westpac Stadium Wellington,25,OPEN
+23,Pakistan,Zimbabwe,NULL,2015-02-28 19:30:00,NOT_STARTED,WC2015,Brisbane Cricket Ground Woolloongabba Brisbane,25,OPEN
+24,Ireland,South Africa,NULL,2015-03-02 19:30:00,NOT_STARTED,WC2015,Manuka Oval Canberra,25,OPEN
+25,Pakistan,United Arab Emirates,NULL,2015-03-3 17:00:00,NOT_STARTED,WC2015,McLean Park Napier,25,OPEN
+26,Australia,Afghanistan,NULL,2015-03-03 22:30:00,NOT_STARTED,WC2015,Western Australia Cricket Association Ground Perth,25,OPEN
+27,Bangladesh,Scotland,NULL,2015-03-04 14:00:00,NOT_STARTED,WC2015,Saxton Oval Nelson,25,OPEN
+28,India,West Indies,NULL,2015-03-05 22:30:00,NOT_STARTED,WC2015,Western Australia Cricket Association Ground Perth,25,OPEN
+29,Pakistan,South Africa,NULL,2015-03-06 17:00:00,NOT_STARTED,WC2015,Eden Park Auckland,25,OPEN
+30,Ireland,Zimbabwe,NULL,2015-03-06 19:30:00,NOT_STARTED,WC2015,Bellerive Oval Hobart,25,OPEN
+31,New Zealand,Afghanistan,NULL,2015-03-07 14:00:00,NOT_STARTED,WC2015,McLean Park Napier,25,OPEN
+32,Australia,Sri Lanka,NULL,2015-03-07 19:30:00,NOT_STARTED,WC2015,Sydney Cricket Ground,25,OPEN
+33,England,Bangladesh,NULL,2015-03-08 20:30:00,NOT_STARTED,WC2015,Adelaide Oval,25,OPEN
+34,India,Ireland,NULL,2015-03-09 18:00:00,NOT_STARTED,WC2015,Seddon Park Hamilton,25,OPEN
+35,Scotland,Sri Lanka,NULL,2015-03-10 20:30:00,NOT_STARTED,WC2015,Bellerive Oval Hobart,25,OPEN
+36,South Africa,United Arab Emirates,NULL,2015-03-11 18:00:00,NOT_STARTED,WC2015,Westpac Stadium Wellington,25,OPEN
+37,New Zealand,Bangladesh,NULL,2015-03-12 18:00:00,NOT_STARTED,WC2015,Seddon Park Hamilton,25,OPEN
+38,Afghanistan,England,NULL,2015-03-12 20:30:00,NOT_STARTED,WC2015,Sydney Cricket Ground,25,OPEN
+39,India,Zimbabwe,NULL,2015-03-13 18:00:00,NOT_STARTED,WC2015,Eden Park Auckland,25,OPEN
+40,Australia,Scotland,NULL,2015-03-13 20:30:00,NOT_STARTED,WC2015,Bellerive Oval Hobart,25,OPEN
+41,United Arab Emirates,West Indies,NULL,2015-03-14 15:00:00,NOT_STARTED,WC2015,McLean Park Napier,25,OPEN
+42,Ireland,Pakistan,NULL,2015-03-14 20:30:00,NOT_STARTED,WC2015,Adelaide Oval,25,OPEN
+43,TBA,TBA,NULL,2015-03-17 20:30:00,NOT_STARTED,WC2015,Sydney Cricket Ground,25,OPEN
+44,TBA,TBA,NULL,2015-03-18 20:30:00,NOT_STARTED,WC2015,Melbourne Cricket Ground,25,OPEN
+45,TBA,TBA,NULL,2015-03-19 20:30:00,NOT_STARTED,WC2015,Adelaide Oval,25,OPEN
+46,TBA,TBA,NULL,2015-03-20 18:00:00,NOT_STARTED,WC2015,Westpac Stadium Wellington,25,OPEN
+47,TBA,TBA,NULL,2015-03-23 18:00:00,NOT_STARTED,WC2015,Eden Park Auckland,25,OPEN
+48,TBA,TBA,NULL,2015-03-25 20:30:00,NOT_STARTED,WC2015,Sydney Cricket Ground,25,OPEN
+49,TBA,TBA,NULL,2015-03-28 20:30:00,NOT_STARTED,WC2015,Melbourne Cricket Ground,25,OPEN

@@ -33,10 +33,10 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 	private String grpNumber = "15857890554-1423150978"; // Actual group
 	String[] m_cmd = {
 	        "python",
-	        "/Users/eshwar2305/GitHub/WC_2015/Writer_Bot/yowsup-cli",
+	        "/Users/eshwar2305/GitHub/BotV2/Writer_Bot/yowsup-cli",
 	        "demos",
 	        "-c",
-	        "/Users/eshwar2305/GitHub/WC_2015/Writer_Bot/config.txt",
+	        "/Users/eshwar2305/GitHub/BotV2/Writer_Bot/config.txt",
 	        "-s",
 	        //"13026901224-1394919313", //Send msg to Terminator
 	        //"13026901224", //Send msg to Eshu number
@@ -53,7 +53,7 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 		loadPhoneNumbers();
 		String workingdirectory = System.getProperty("user.dir");
 		System.out.println(workingdirectory);
-	    m_tailer = new LogFileTailer( new File( "/Users/eshwar2305/GitHub/WC_2015/Reader_Bot/out.txt" ), 1000, false );
+	    m_tailer = new LogFileTailer( new File( "/Users/eshwar2305/GitHub/BotV2/Reader_Bot/out.txt" ), 1000, false );
 	    m_tailer.addLogFileTailerListener( this );
 	    m_tailer.start();
 	    
@@ -63,7 +63,7 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 	    
 	    //http://www.espncricinfo.com/icc-cricket-world-cup-2015/engine/series/509587.html
 	    //m_cricinfo =  new Cricinfo("http://www.espncricinfo.com/icc-cricket-world-cup-2015/engine/series/806105.html");
-	    m_cricinfo =  new CricinfoWC2015("http://www.espncricinfo.com/icc-cricket-world-cup-2015/engine/series/806105.html");
+	    m_cricinfo =  new CricinfoWC2015("http://www.espncricinfo.com/icc-cricket-world-cup-2015/engine/series/509587.html");
 		m_cricinfo.addCricinfoListener(this);
 		m_cricinfo.start();
 	}

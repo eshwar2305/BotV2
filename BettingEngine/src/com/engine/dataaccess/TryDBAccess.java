@@ -48,7 +48,7 @@ public class TryDBAccess
 			// the database name  
 			String dbName="TryDB";
 			   // define the Derby connection URL to use 
-			String connectionURL = "jdbc:derby://localhost:5000/" + dbName + ";create=true";
+			String connectionURL = "jdbc:derby://localhost:50000/" + dbName + ";create=true";
 			try{
 		         Class.forName(driver); 
 		         System.out.println(driver + " loaded. ");
