@@ -1,0 +1,24 @@
+
+	1. Install latest version of Derby (db-derby-10.10.1.1-bin) onto one directory, set the PATH variable, DERBYHOME 
+	2. Copy TryDB folder and place it in db-derby-10.10.1.1-bin\bin
+	3. Start DB server -  Open command line 
+	Go to db-derby-10.10.1.1-bin\bin 
+	>startNetworkServer -p 50000
+	4. Start DB Client if u need - open another command line
+	Go to db-derby-10.10.1.1-bin\bin 
+	>Ij
+	Ij> CONNECT 'jdbc:derby://localhost:50000/TryDB;create=true';
+	
+	5. Open Try Project in Eclipse
+	6. Set the "Buildpath" to include the derby libraries
+
+insert into betting("919880338008","24","India","0","2014-03-28 09:27:27");
+
+insert into betting(playerId, gameId, betTeam, score, betDate) values ("919880338008",24,"India",0,2014-03-28 09:27:27)
+
+	
+
+
+
+
+

@@ -1,0 +1,14 @@
+Wed May 28 07:13:49 IST 2014 : Apache Derby Network Server - 10.10.1.1 - (1458268) started and ready to accept connections on port 50000
+----------------------------------------------------------------
+Wed May 28 07:15:52 IST 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0146-407f-637d-ffff939770c0 
+on database directory C:\rnj\eclipse-jee-juno-SR2-win32-x86_64\eclipse\workspace\BettingEngine\db-derby-10.10.1.1-bin\bin\TryDB with class loader sun.misc.Launcher$AppClassLoader@68ffab0a 
+Loaded from file:/C:/rnj/eclipse-jee-juno-SR2-win32-x86_64/eclipse/workspace/BettingEngine/db-derby-10.10.1.1-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_51-b13
+user.dir=C:\rnj\eclipse-jee-juno-SR2-win32-x86_64\eclipse\workspace\BettingEngine\db-derby-10.10.1.1-bin\bin
+os.name=Windows Server 2012
+os.arch=amd64
+os.version=6.2
+derby.system.home=C:\rnj\eclipse-jee-juno-SR2-win32-x86_64\eclipse\workspace\BettingEngine\db-derby-10.10.1.1-bin\bin
+Database Class Loader started - derby.database.classpath=''
