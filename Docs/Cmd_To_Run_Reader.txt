@@ -1,3 +1,6 @@
 python yowsup-cli -c config.example -i 919686811944-1394712848
 
 python yowsup-cli -c config.example -k -l
+
+
+yowsup-cli demos -d -c config.txt -y
