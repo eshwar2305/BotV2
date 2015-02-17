@@ -38,18 +38,24 @@ public class CricinfoWC2015 extends Thread
     {
         do
         {
-            for(; isMatchComplete(m_onGoingMatchNumber); m_onGoingMatchNumber++)
-            {
-                Game game = new Game();
-                game.setGameId(m_onGoingMatchNumber);
-                game.setWinTeam(getMatchWinner(m_onGoingMatchNumber));
-                game.setTeamA(getTeamA(m_onGoingMatchNumber));
-                game.setTeamB(getTeamB(m_onGoingMatchNumber));
-                System.out.println((new StringBuilder("In Cricinfo - Match number =")).append(m_onGoingMatchNumber).append(" results available").toString());
-                fireMatchResultAvailable(game);
-            }
+        	try{
+                for(; isMatchComplete(m_onGoingMatchNumber); m_onGoingMatchNumber++)
+                {
+                    Game game = new Game();
+                    game.setGameId(m_onGoingMatchNumber);
+                    game.setWinTeam(getMatchWinner(m_onGoingMatchNumber));
+                    game.setTeamA(getTeamA(m_onGoingMatchNumber));
+                    game.setTeamB(getTeamB(m_onGoingMatchNumber));
+                    System.out.println((new StringBuilder("In Cricinfo - Match number =")).append(m_onGoingMatchNumber).append(" results available").toString());
+                    fireMatchResultAvailable(game);
+                }
+        	}catch(Exception ex){
+        		ex.printStackTrace();
+        		System.out.println("Match complete is null/error");
+        	}
 
-            System.out.println("Cricinfo - Sleeping for 10 mins");
+
+            System.out.println(new Date() + "Cricinfo - Sleeping for 10 mins");
             try
             {
                 sleep(m_sampleInterval);
@@ -64,8 +70,6 @@ public class CricinfoWC2015 extends Thread
 
     public CricinfoWC2015(String url)
     {
-        m_sampleInterval = 0x927c0L;
-        m_onGoingMatchNumber = 1;
         m_listeners = new HashSet();
         m_url = url;
         updateCricInfoDetails();
@@ -73,10 +77,10 @@ public class CricinfoWC2015 extends Thread
 
     public void updateCricInfoDetails()
     {
-        System.out.println("Updating CricInfo Details");
+        System.out.println(new Date() + "Updating CricInfo Details");
         try
         {
-            Document doc = Jsoup.connect(m_url).timeout(6000).get();
+            Document doc = Jsoup.connect(m_url).timeout(6000*2).get();
             m_potClass = doc.getElementsByClass("potMatchLink");
             for(int i = m_potClass.size() - 1; i > 0; i -= 2)
                 m_potClass.remove(i);
@@ -86,6 +90,7 @@ public class CricinfoWC2015 extends Thread
         }
         catch(IOException e)
         {
+        	System.out.println("Cricinfo website failed to load.");
             e.printStackTrace();
         }
     }
@@ -309,6 +314,11 @@ public class CricinfoWC2015 extends Thread
             e.printStackTrace();
         }
         Elements scores = m_potLiveScore.get(0).getElementsByClass("espni-livescores-scoreline");
+        Element checkWomen = scores.get(0).child(0);
+        if(checkWomen.toString().contains("Women")){
+        	//If there is Women match score - go for next node
+        	scores = m_potLiveScore.get(1).getElementsByClass("espni-livescores-scoreline");
+        }
         StringBuffer sb = new StringBuffer();
         for(int i = 0; i < scores.size(); i++)
         {
@@ -367,8 +377,12 @@ public class CricinfoWC2015 extends Thread
         return str;
     }
 
-    private long m_sampleInterval;
-    private int m_onGoingMatchNumber;
+	  /* How frequently to check for next match; 
+	   */
+	  private long m_sampleInterval = 1000 * 60 * 10 ;// 10 mins
+	  //private long m_sampleInterval = 1000 * 30 ;// 30 secs
+	  private int m_onGoingMatchNumber = 1; // set it to fiurst game initailly
+	  // to query for the results of this match
     private String m_url;
     private Set m_listeners;
     Elements m_potClass;

@@ -2,5 +2,13 @@ python yowsup-cli -c config.example -i 919686811944-1394712848
 
 python yowsup-cli -c config.example -k -l
 
+cd GitHub/BotV2/Reader_Bot/
+sudo python setup.py install
 
 yowsup-cli demos -d -c config.txt -y
+/L
+
+cd /Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin
+./startNetworkServer -p 50000
+
+/group setSubject 13026901224-1423376234@g.us 

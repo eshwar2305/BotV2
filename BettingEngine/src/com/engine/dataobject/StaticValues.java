@@ -9,7 +9,7 @@ public class StaticValues {
 	static public String GAME_STATUS_STARTED = "STARTED";
 	static public String GAME_STATUS_DONE = "DONE";
 	static public String GAME_STATUS_BETTING = "BETTING";
-	public static  int TOTALPLAYERS = 20;
+	public static  int TOTALPLAYERS = 21;
 	static public  int SCOREPERPLAYER = 25;
 	public static String BETTING_TYPE_OPEN = "OPEN";
 	public static String BETTING_TYPE_CLOSED = "CLOSED";
@@ -102,7 +102,7 @@ public class StaticValues {
 	public static String STR_INVALID_BET = "This is an invalid bet!";
 	public static String STR_INDIVIDUAL_BET = "Thanks for placing your bet. Bet details will be released when betting completes.";
 	public static String STR_THANK_YOU = " has placed the bets. Remaining folks please place your bets.";
-	public static String STR_CLOSED_BETTING_MSG = "This is a CLOSED betting game. Please send your bets to this number +91-9845209230 from Whatsapp. Don't type your bets here.";
+	public static String STR_CLOSED_BETTING_MSG = "This is a CLOSED betting game. Please send your bets to this number +1-6502292341 from Whatsapp. Don't type your bets here.";
 	
 	
 	//Return Error Messages

@@ -1,7 +1,41 @@
-Thu Feb 12 01:44:14 PST 2015 : Apache Derby Network Server - 10.10.1.1 - (1458268) started and ready to accept connections on port 50000
+Thu Feb 12 09:15:50 PST 2015 : Apache Derby Network Server - 10.10.1.1 - (1458268) started and ready to accept connections on port 50000
 ----------------------------------------------------------------
-Thu Feb 12 01:46:14 PST 2015:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-014b-7d2c-a9b7-00001b4a47b3 
+Thu Feb 12 09:16:08 PST 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-014b-7eca-1dc3-00001b4a47b3 
+on database directory /Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin/TryDB with class loader sun.misc.Launcher$AppClassLoader@1729854 
+Loaded from file:/Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/lib/derby.jar
+java.vendor=Apple Inc.
+java.runtime.version=1.6.0_65-b14-462-11M4609
+user.dir=/Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.9.4
+derby.system.home=/Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Feb 13 19:21:22 PST 2015:
+Shutting down instance a816c00e-014b-7eca-1dc3-00001b4a47b3 on database directory /Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin/TryDB with class loader sun.misc.Launcher$AppClassLoader@1729854 
+Fri Feb 13 19:21:22 PST 2015 Thread[DRDAConnThread_5,5,main] (DATABASE = TryDB), (DRDAID = {13}), Database 'TryDB' shutdown.
+----------------------------------------------------------------
+Fri Feb 13 19:21:25 PST 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance 8f3600b1-014b-7eca-1dc3-00001b4a47b3 
+on database directory /Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin/TryDB with class loader sun.misc.Launcher$AppClassLoader@1729854 
+Loaded from file:/Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/lib/derby.jar
+java.vendor=Apple Inc.
+java.runtime.version=1.6.0_65-b14-462-11M4609
+user.dir=/Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.9.4
+derby.system.home=/Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sun Feb 15 01:12:32 PST 2015:
+Shutting down instance 8f3600b1-014b-7eca-1dc3-00001b4a47b3 on database directory /Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin/TryDB with class loader sun.misc.Launcher$AppClassLoader@1729854 
+Sun Feb 15 01:12:32 PST 2015 Thread[DRDAConnThread_2,5,main] (DATABASE = TryDB), (DRDAID = {33}), Database 'TryDB' shutdown.
+----------------------------------------------------------------
+Sun Feb 15 01:13:20 PST 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance 111f4317-014b-7eca-1dc3-00001b4a47b3 
 on database directory /Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin/TryDB with class loader sun.misc.Launcher$AppClassLoader@1729854 
 Loaded from file:/Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/lib/derby.jar
 java.vendor=Apple Inc.
