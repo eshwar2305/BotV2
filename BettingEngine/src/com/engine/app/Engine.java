@@ -85,8 +85,9 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 			//sendMsg.append("\n");
 			sendMsg.append(" on ");
 			SimpleDateFormat sdf = new SimpleDateFormat("dd-MMM HH:mm");
-			long t = g.getStartDate().getTime() + TimeUnit.MINUTES.toMillis(810);// Convert PST to IST 810 minutes = 13.5Hrs
+			long t = g.getStartDate().getTime() + TimeUnit.MINUTES.toMillis(750);// Convert PST to IST 810 minutes = 13.5Hrs
 			sendMsg.append(sdf.format(new Timestamp(t)));
+			sendMsg.append(" (").append(g.getScorePerPlayer()).append(" Points)");
 			sendMsg.append("\n");
 		}	
 		
@@ -318,8 +319,9 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 			sendMsg.append(g.getPlace());
 			sendMsg.append(" on ");
 			SimpleDateFormat sdf = new SimpleDateFormat("dd-MMM HH:mm");
-			long t = g.getStartDate().getTime() + TimeUnit.MINUTES.toMillis(810);// Convert PST to IST 810 minutes = 13.5Hrs
+			long t = g.getStartDate().getTime() + TimeUnit.MINUTES.toMillis(750);// Convert PST to IST 810 minutes = 13.5Hrs
 			sendMsg.append(sdf.format(new Timestamp(t)));
+			sendMsg.append(" (").append(g.getScorePerPlayer()).append(" Points)");
 			sendMsg.append("\n");
 		}	
 		

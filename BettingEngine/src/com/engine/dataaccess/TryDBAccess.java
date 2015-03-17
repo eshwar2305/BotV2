@@ -413,7 +413,7 @@ public class TryDBAccess
 			
 			if(g.getBettingType().equals(StaticValues.BETTING_TYPE_CLOSED)){
 				int totalBets = betsForA + betsForB;
-				if(totalBets == 20){
+				if(totalBets == StaticValues.TOTALPLAYERS){
 					g.setBettingType(StaticValues.BETTING_TYPE_OPEN);
 				}
 			}
@@ -485,7 +485,7 @@ public class TryDBAccess
 			ret  = buf.toString();
 			
 			if(g.getBettingType().equals(StaticValues.BETTING_TYPE_CLOSED)){
-				if(betters == 20){
+				if(betters == StaticValues.TOTALPLAYERS){
 					g.setBettingType(StaticValues.BETTING_TYPE_OPEN);
 				}
 			}

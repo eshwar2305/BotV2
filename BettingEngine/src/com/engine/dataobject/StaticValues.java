@@ -84,12 +84,12 @@ public class StaticValues {
 															"khoobsurat ladkiyan jab jhooth bolti hai ... toh aur bhi khoobsurat lagti hai",
 															"aden hudgirooo... adhyaking aadthiro... betu betu antha kaat kodthiro....."};
 	
-	public static String STR_MESSAGE_CLOSEDBETTING[] = { "Ashwin bet haako.. yake beka bisi bisi kajjaya",
+	public static String STR_MESSAGE_CLOSEDBETTING[] = {"Bets will be published once all members have placed their bet."
+														/*"Ashwin bet haako.. yake beka bisi bisi kajjaya",
 														"Ashwin ge ugiri swalpa, bet hako andre nakra maadthane..",
 														"Lei Bhairava Ashwin Maan Singh Bet hakoo!!",
 														"Ashwin pardesi... naatka adbedvo...sumne maryadhi agi bet haaku..",
-														" Ashwin ****** &$^%(#( *@&^$&#* *@(#*** beep beep beep",
-};
+														" Ashwin ****** &$^%(#( *@&^$&#* *@(#*** beep beep beep"*/};
 	
 	public static String STR_SCORE_NOT_AVAILABLE[] = {	"vasi thadko Bhairava.. Match innu start agilla..",
 														"my child..have patience in life...Let the match start.. ",
