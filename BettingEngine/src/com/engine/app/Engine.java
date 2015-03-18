@@ -3,6 +3,8 @@ import java.io.BufferedReader;
 
 import com.engine.dataaccess.*;
 import com.engine.dataobject.*;
+import com.engine.util.OSValidator;
+
 import java.sql.Timestamp;
 
 import java.io.File;
@@ -21,6 +23,9 @@ import java.util.concurrent.TimeUnit;
 
 public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchListener{
 
+	private String out_filename;
+	private String writer_botpath;
+	private String writer_configpath;
 	private LogFileTailer m_tailer;
 	private NextMatchDetails m_nmDetails;
 	//private Cricinfo m_cricinfo;
@@ -33,10 +38,10 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 	private String grpNumber = "15857890554-1423150978"; // Actual group
 	String[] m_cmd = {
 	        "python",
-	        "/Users/eshwar2305/GitHub/BotV2/Writer_Bot/yowsup-cli",
+	        writer_botpath,
 	        "demos",
 	        "-c",
-	        "/Users/eshwar2305/GitHub/BotV2/Writer_Bot/config.txt",
+	        writer_configpath,
 	        "-s",
 	        //"13026901224-1394919313", //Send msg to Terminator
 	        //"13026901224", //Send msg to Eshu number
@@ -47,13 +52,25 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 	        "test"
 	    };
 	
+	public Engine(){
+		OSValidator os = new OSValidator();
+		if(os.isUnix()){
+			out_filename = "/home/azureuser/git/BotV2/Reader_Bot/out.txt";
+			writer_botpath = "/home/azureuser/git/BotV2/Writer_Bot/yowsup-cli";
+			writer_configpath = "/home/azureuser/git/BotV2/Writer_Bot/config.txt";
+		}else if(os.isMac()){
+			out_filename = "/Users/eshwar2305/GitHub/BotV2/Reader_Bot/out.txt";
+			writer_botpath = "/Users/eshwar2305/GitHub/BotV2/Writer_Bot/yowsup-cli";
+			writer_configpath = "/Users/eshwar2305/GitHub/BotV2/Writer_Bot/config.txt";
+		} 
+	}
 	
 	public void spark() {
 		m_dbHandle = new TryDBAccess(); //Eshu added this to initialize the object;
 		loadPhoneNumbers();
 		String workingdirectory = System.getProperty("user.dir");
 		System.out.println(workingdirectory);
-	    m_tailer = new LogFileTailer( new File( "/Users/eshwar2305/GitHub/BotV2/Reader_Bot/out.txt" ), 1000, false );
+	    m_tailer = new LogFileTailer( new File(out_filename), 1000, false );
 	    m_tailer.addLogFileTailerListener( this );
 	    m_tailer.start();
 	    
