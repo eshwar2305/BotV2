@@ -63,6 +63,9 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 			writer_botpath = "/Users/eshwar2305/GitHub/BotV2/Writer_Bot/yowsup-cli";
 			writer_configpath = "/Users/eshwar2305/GitHub/BotV2/Writer_Bot/config.txt";
 		} 
+		m_cmd[1] = writer_botpath;
+		m_cmd[4] = writer_configpath;
+		
 	}
 	
 	public void spark() {
