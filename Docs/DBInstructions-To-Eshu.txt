@@ -8,6 +8,7 @@
 	Go to db-derby-10.10.1.1-bin\bin 
 	>Ij
 	Ij> CONNECT 'jdbc:derby://localhost:50000/TryDB;create=true';
+
 	
 	5. Open Try Project in Eclipse
 	6. Set the "Buildpath" to include the derby libraries
