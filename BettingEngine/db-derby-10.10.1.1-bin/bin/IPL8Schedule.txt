@@ -1,0 +1,61 @@
+1,Kolkata,Mumbai,NULL,2015-04-08 20:00:00.0,NOT_STARTED,IPL8,Eden Gardens Kolkata,25,OPEN
+2,Chennai,Delhi,NULL,2015-04-09 20:00:00.0,NOT_STARTED,IPL8,MA Chidambaram Stadium Chepauk Chennai,25,OPEN
+3,Punjab,Rajasthan,NULL,2015-04-10 20:00:00.0,NOT_STARTED,IPL8,Maharashtra Cricket Association Stadium Pune,25,OPEN
+4,Chennai,Hyderabad,NULL,2015-04-11 16:00:00.0,NOT_STARTED,IPL8,MA Chidambaram Stadium Chepauk Chennai,25,OPEN
+5,Kolkata,Bangalore,NULL,2015-04-11 20:00:00.0,NOT_STARTED,IPL8,Eden Gardens Kolkata,25,OPEN
+6,Delhi,Rajasthan,NULL,2015-04-12 16:00:00.0,NOT_STARTED,IPL8,Feroz Shah Kotla Delhi,25,OPEN
+7,Mumbai,Punjab,NULL,2015-04-12 20:00:00.0,NOT_STARTED,IPL8,Wankhede Stadium Mumbai,25,OPEN
+8,Bangalore,Hyderabad,NULL,2015-04-13 20:00:00.0,NOT_STARTED,IPL8,M Chinnaswamy Stadium Bangalore,25,OPEN
+9,Rajasthan,Mumbai,NULL,2015-04-14 20:00:00.0,NOT_STARTED,IPL8,Sardar Patel Stadium Motera Ahmedabad,25,OPEN
+10,Punjab,Delhi,NULL,2015-04-15 20:00:00.0,NOT_STARTED,IPL8,Maharashtra Cricket Association Stadium Pune,25,OPEN
+11,Hyderabad,Rajasthan,NULL,2015-04-16 20:00:00.0,NOT_STARTED,IPL8,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium Visakhapatnam,25,OPEN
+12,Mumbai,Chennai,NULL,2015-04-17 20:00:00.0,NOT_STARTED,IPL8,Wankhede Stadium Mumbai,25,OPEN
+13,Hyderabad,Delhi,NULL,2015-04-18 16:00:00.0,NOT_STARTED,IPL8,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium Visakhapatnam,25,OPEN
+14,Punjab,Kolkata,NULL,2015-04-18 20:00:00.0,NOT_STARTED,IPL8,Maharashtra Cricket Association Stadium Pune,25,OPEN
+15,Rajasthan,Chennai,NULL,2015-04-19 16:00:00.0,NOT_STARTED,IPL8,Sardar Patel Stadium Motera Ahmedabad,25,OPEN
+16,Bangalore,Mumbai,NULL,2015-04-19 20:00:00.0,NOT_STARTED,IPL8,M Chinnaswamy Stadium Bangalore,25,OPEN
+17,Delhi,Kolkata,NULL,2015-04-20 20:00:00.0,NOT_STARTED,IPL8,Feroz Shah Kotla Delhi,25,OPEN
+18,Rajasthan,Punjab,NULL,2015-04-21 20:00:00.0,NOT_STARTED,IPL8,Sardar Patel Stadium Motera Ahmedabad,25,OPEN
+19,Hyderabad,Kolkata,NULL,2015-04-22 16:00:00.0,NOT_STARTED,IPL8,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium Visakhapatnam,25,OPEN
+20,Bangalore,Chennai,NULL,2015-04-22 20:00:00.0,NOT_STARTED,IPL8,M Chinnaswamy Stadium Bangalore,25,OPEN
+21,Delhi,Mumbai,NULL,2015-04-23 20:00:00.0,NOT_STARTED,IPL8,Feroz Shah Kotla Delhi,25,OPEN
+22,Rajasthan,Bangalore,NULL,2015-04-24 20:00:00.0,NOT_STARTED,IPL8,Sardar Patel Stadium Motera Ahmedabad,25,OPEN
+23,Mumbai,Hyderabad,NULL,2015-04-25 16:00:00.0,NOT_STARTED,IPL8,Wankhede Stadium Mumbai,25,OPEN
+24,Chennai,Punjab,NULL,2015-04-25 20:00:00.0,NOT_STARTED,IPL8,MA Chidambaram Stadium Chepauk Chennai,25,OPEN
+25,Kolkata,Rajasthan,NULL,2015-04-26 16:00:00.0,NOT_STARTED,IPL8,Eden Gardens Kolkata,25,OPEN
+26,Delhi,Bangalore,NULL,2015-04-26 20:00:00.0,NOT_STARTED,IPL8,Feroz Shah Kotla Delhi,25,OPEN
+27,Punjab,Hyderabad,NULL,2015-04-27 20:00:00.0,NOT_STARTED,IPL8,Punjab Cricket Association Stadium Mohali Chandigarh,25,OPEN
+28,Chennai,Kolkata,NULL,2015-04-28 20:00:00.0,NOT_STARTED,IPL8,MA Chidambaram Stadium Chepauk Chennai,25,OPEN
+29,Bangalore,Rajasthan,NULL,2015-04-29 20:00:00.0,NOT_STARTED,IPL8,M Chinnaswamy Stadium Bangalore,25,OPEN
+30,Kolkata,Chennai,NULL,2015-04-30 20:00:00.0,NOT_STARTED,IPL8,Eden Gardens Kolkata,25,OPEN
+31,Delhi,Punjab,NULL,2015-05-01 16:00:00.0,NOT_STARTED,IPL8,Feroz Shah Kotla Delhi,25,OPEN
+32,Mumbai,Rajasthan,NULL,2015-05-01 20:00:00.0,NOT_STARTED,IPL8,Wankhede Stadium Mumbai,25,OPEN
+33,Bangalore,Kolkata,NULL,2015-05-02 16:00:00.0,NOT_STARTED,IPL8,M Chinnaswamy Stadium Bangalore,25,OPEN
+34,Hyderabad,Chennai,NULL,2015-05-02 20:00:00.0,NOT_STARTED,IPL8,Rajiv Gandhi International Stadium Uppal Hyderabad,25,OPEN
+35,Punjab,Mumbai,NULL,2015-05-03 16:00:00.0,NOT_STARTED,IPL8,Punjab Cricket Association Stadium Mohali Chandigarh,25,OPEN
+36,Rajasthan,Delhi,NULL,2015-05-03 20:00:00.0,NOT_STARTED,IPL8,Brabourne Stadium Mumbai,25,OPEN
+37,Chennai,Bangalore,NULL,2015-05-04 16:00:00.0,NOT_STARTED,IPL8,MA Chidambaram Stadium Chepauk Chennai,25,OPEN
+38,Kolkata,Hyderabad,NULL,2015-05-04 20:00:00.0,NOT_STARTED,IPL8,Eden Gardens Kolkata,25,OPEN
+39,Mumbai,Delhi,NULL,2015-05-05 20:00:00.0,NOT_STARTED,IPL8,Wankhede Stadium Mumbai,25,OPEN
+40,Bangalore,Punjab,NULL,2015-05-06 20:00:00.0,NOT_STARTED,IPL8,M Chinnaswamy Stadium Bangalore,25,OPEN
+41,Rajasthan,Hyderabad,NULL,2015-05-07 16:00:00.0,NOT_STARTED,IPL8,Brabourne Stadium Mumbai,25,OPEN
+42,Kolkata,Delhi,NULL,2015-05-07 20:00:00.0,NOT_STARTED,IPL8,Eden Gardens Kolkata,25,OPEN
+43,Chennai,Mumbai,NULL,2015-05-08 20:00:00.0,NOT_STARTED,IPL8,MA Chidambaram Stadium Chepauk Chennai,25,OPEN
+44,Kolkata,Punjab,NULL,2015-05-09 16:00:00.0,NOT_STARTED,IPL8,Eden Gardens Kolkata,25,OPEN
+45,Delhi,Hyderabad,NULL,2015-05-09 20:00:00.0,NOT_STARTED,IPL8,Shaheed Veer Narayan Singh International Stadium Raipur,25,OPEN
+46,Mumbai,Bangalore,NULL,2015-05-10 16:00:00.0,NOT_STARTED,IPL8,Wankhede Stadium Mumbai,25,OPEN
+47,Chennai,Rajasthan,NULL,2015-05-10 20:00:00.0,NOT_STARTED,IPL8,MA Chidambaram Stadium Chepauk Chennai,25,OPEN
+48,Hyderabad,Punjab,NULL,2015-05-11 20:00:00.0,NOT_STARTED,IPL8,Rajiv Gandhi International Stadium Uppal Hyderabad,25,OPEN
+49,Delhi,Chennai,NULL,2015-05-12 20:00:00.0,NOT_STARTED,IPL8,Shaheed Veer Narayan Singh International Stadium Raipur,25,OPEN
+50,Punjab,Bangalore,NULL,2015-05-13 20:00:00.0,NOT_STARTED,IPL8,Punjab Cricket Association Stadium Mohali Chandigarh,25,OPEN
+51,Mumbai,Kolkata,NULL,2015-05-14 20:00:00.0,NOT_STARTED,IPL8,Wankhede Stadium Mumbai,25,OPEN
+52,Hyderabad,Bangalore,NULL,2015-05-15 20:00:00.0,NOT_STARTED,IPL8,Rajiv Gandhi International Stadium Uppal Hyderabad,25,OPEN
+53,Punjab,Chennai,NULL,2015-05-16 16:00:00.0,NOT_STARTED,IPL8,Punjab Cricket Association Stadium Mohali Chandigarh,25,OPEN
+54,Rajasthan,Kolkata,NULL,2015-05-16 20:00:00.0,NOT_STARTED,IPL8,Brabourne Stadium Mumbai,25,OPEN
+55,Bangalore,Delhi,NULL,2015-05-17 16:00:00.0,NOT_STARTED,IPL8,M Chinnaswamy Stadium Bangalore,25,OPEN
+56,Hyderabad,Mumbai,NULL,2015-05-17 20:00:00.0,NOT_STARTED,IPL8,Rajiv Gandhi International Stadium Uppal Hyderabad,25,OPEN
+57,TBC,TBC,NULL,2015-05-19 20:00:00.0,NOT_STARTED,IPL8,TBC,50,CLOSED
+58,TBC,TBC,NULL,2015-05-20 20:00:00.0,NOT_STARTED,IPL8,TBC,50,CLOSED
+59,TBC,TBC,NULL,2015-05-22 20:00:00.0,NOT_STARTED,IPL8,TBC,50,CLOSED
+60,TBC,TBC,NULL,2015-05-24 20:00:00.0,NOT_STARTED,IPL8,TBC,100,CLOSED
+61,TBC,TBC,NULL,2015-05-19 20:00:00.0,NOT_STARTED,Dummy,TBC,0,OPEN

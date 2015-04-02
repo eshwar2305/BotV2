@@ -55,9 +55,9 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 	public Engine(){
 		OSValidator os = new OSValidator();
 		if(os.isUnix()){
-			out_filename = "/home/azureuser/git/BotV2/Reader_Bot/out.txt";
-			writer_botpath = "/home/azureuser/git/BotV2/Writer_Bot/yowsup-cli";
-			writer_configpath = "/home/azureuser/git/BotV2/Writer_Bot/config.txt";
+			out_filename = "/home/rnjnrn/git/BotV2/Reader_Bot/out.txt";
+			writer_botpath = "/home/rnjnrn/git/BotV2/Writer_Bot/yowsup-cli";
+			writer_configpath = "/home/rnjnrn/git/BotV2/Writer_Bot/config.txt";
 		}else if(os.isMac()){
 			out_filename = "/Users/eshwar2305/GitHub/BotV2/Reader_Bot/out.txt";
 			writer_botpath = "/Users/eshwar2305/GitHub/BotV2/Writer_Bot/yowsup-cli";
@@ -105,7 +105,7 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 			//sendMsg.append("\n");
 			sendMsg.append(" on ");
 			SimpleDateFormat sdf = new SimpleDateFormat("dd-MMM HH:mm");
-			long t = g.getStartDate().getTime() + TimeUnit.MINUTES.toMillis(750);// Convert PST to IST 810 minutes = 13.5Hrs
+			long t = g.getStartDate().getTime();// + TimeUnit.MINUTES.toMillis(750);// Convert PST to IST 810 minutes = 13.5Hrs
 			sendMsg.append(sdf.format(new Timestamp(t)));
 			sendMsg.append(" (").append(g.getScorePerPlayer()).append(" Points)");
 			sendMsg.append("\n");
@@ -150,20 +150,22 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 			sendMsg.append("\n");
 			sendMsg.append(getCurrentScoreSheet());
 			sendMsg.append("\n");
-			/*sendMsg.append("Congratualtions to the top three players - Hip hip hurrah!!");
-			sendMsg.append("\n");
-			sendMsg.append("No.1 player - $10,000 has been deposited to your Swiss Bank Account no. ending XXXX420");
-			sendMsg.append("\n");
-			sendMsg.append("No.20 player - Happy Rahul Gandhi award to you");
-			sendMsg.append("\n");
-			sendMsg.append("Thank you all buffalo skinned ppl. Thanks for your patience listening to my abusive language. Its been a pleasure serving you all.");
-			sendMsg.append("\n");
-			sendMsg.append("\n");
-			sendMsg.append("I will be back with a bang and more Kyaak Thu language.");
-			sendMsg.append("\n");
-			sendMsg.append("Astalavista Baby!!");
-			sendMsg.append("\n");
-			sendMsg.append("-Botappa signing off!!");*/
+			if(g.getGameId() == 60){
+				sendMsg.append("Congratualtions to the top three players - Hip hip hurrah!!");
+				sendMsg.append("\n");
+				sendMsg.append("No.1 player - $10,000 has been deposited to your Swiss Bank Account no. ending XXXX420");
+				sendMsg.append("\n");
+				sendMsg.append("No.21 player - Happy loser award to you");
+				sendMsg.append("\n");
+				sendMsg.append("Thank you all. Its been a pleasure serving you all.");
+				sendMsg.append("\n");
+				sendMsg.append("\n");
+				sendMsg.append("I will be back for next tournament.");
+				sendMsg.append("\n");
+				sendMsg.append("Astalavista Baby!!");
+				sendMsg.append("\n");
+				sendMsg.append("-Botappa signing off!!");	
+			}
 			System.out.println("Sending: " + sendMsg.toString());
 	    	fireMsg(grpNumber,sendMsg.toString());
 		}
@@ -339,7 +341,7 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 			sendMsg.append(g.getPlace());
 			sendMsg.append(" on ");
 			SimpleDateFormat sdf = new SimpleDateFormat("dd-MMM HH:mm");
-			long t = g.getStartDate().getTime() + TimeUnit.MINUTES.toMillis(750);// Convert PST to IST 810 minutes = 13.5Hrs
+			long t = g.getStartDate().getTime();// + TimeUnit.MINUTES.toMillis(750);// Convert PST to IST 810 minutes = 13.5Hrs
 			sendMsg.append(sdf.format(new Timestamp(t)));
 			sendMsg.append(" (").append(g.getScorePerPlayer()).append(" Points)");
 			sendMsg.append("\n");
