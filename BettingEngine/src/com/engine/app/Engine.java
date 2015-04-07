@@ -83,7 +83,7 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 	    
 	    //http://www.espncricinfo.com/icc-cricket-world-cup-2015/engine/series/509587.html
 	    //m_cricinfo =  new Cricinfo("http://www.espncricinfo.com/icc-cricket-world-cup-2015/engine/series/806105.html");
-	    m_cricinfo =  new CricinfoWC2015("http://www.espncricinfo.com/icc-cricket-world-cup-2015/engine/series/509587.html");
+	    m_cricinfo =  new CricinfoWC2015("http://www.espncricinfo.com/indian-premier-league-2015/engine/series/791129.html");
 		m_cricinfo.addCricinfoListener(this);
 		m_cricinfo.start();
 	}
