@@ -1,14 +1,14 @@
-Tue Apr 07 04:04:33 UTC 2015 : Apache Derby Network Server - 10.10.1.1 - (1458268) started and ready to accept connections on port 50000
+Wed Apr 08 13:28:14 PDT 2015 : Apache Derby Network Server - 10.10.1.1 - (1458268) started and ready to accept connections on port 50000
 ----------------------------------------------------------------
-Tue Apr 07 04:11:51 UTC 2015:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-014c-920d-10e6-00003de9583b 
-on database directory /home/rnjnrn/git/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin/TryDB with class loader sun.misc.Launcher$AppClassLoader@610455d6 
-Loaded from file:/home/rnjnrn/git/BotV2/BettingEngine/db-derby-10.10.1.1-bin/lib/derby.jar
-java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_40-b25
-user.dir=/home/rnjnrn/git/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin
-os.name=Linux
-os.arch=amd64
-os.version=3.16.6-2-default
-derby.system.home=/home/rnjnrn/git/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin
+Wed Apr 08 13:28:32 PDT 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-014c-9ab8-0452-00001b4a47b3 
+on database directory /Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin/TryDB with class loader sun.misc.Launcher$AppClassLoader@1729854 
+Loaded from file:/Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/lib/derby.jar
+java.vendor=Apple Inc.
+java.runtime.version=1.6.0_65-b14-462-11M4609
+user.dir=/Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.9.4
+derby.system.home=/Users/eshwar2305/GitHub/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin
 Database Class Loader started - derby.database.classpath=''

@@ -30,6 +30,7 @@ public class TryDBAccess
 	private PreparedStatement gameRefreshStarted = null;
 	private PreparedStatement gameStatusUpdateToStarted = null;	
 	private PreparedStatement overrideBetting = null;
+	private PreparedStatement hallOfFame = null;
 	static private ArrayList<Game>gamesForBetting = null; 
 
 			
@@ -79,7 +80,7 @@ public class TryDBAccess
 		         gameRefreshDone = conn.prepareStatement(tmp.toString());		 
 		         
 		         overrideBetting = conn.prepareStatement("update betting set betTeam = ?, betDate = ? where playerid = ? and gameid = ?");
-		         
+		         hallOfFame = conn.prepareStatement("select * from halloffame");
 		         
 		    } catch(java.lang.ClassNotFoundException e)     {
 		          System.err.print("ClassNotFoundException: ");
@@ -522,6 +523,33 @@ public class TryDBAccess
 			e.printStackTrace();
 		}
 		return ret;		
+	}
+	
+	public String displayHallOfFame(){
+		ArrayList<HallOfFame> hfmList = new ArrayList<HallOfFame>();
+		StringBuffer sb = new StringBuffer();
+		try {
+			ResultSet rs = hallOfFame.executeQuery();
+			while(rs.next()){
+				HallOfFame hfm = new HallOfFame(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getInt(7));
+				hfmList.add(hfm);	
+			}
+			rs.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+		
+		for(HallOfFame hfm : hfmList){
+			sb.append("--------").append("\n");
+			sb.append(hfm.getTourname()).append("\n");
+			sb.append("--------").append("\n");
+			sb.append("Gold: ").append(hfm.getGold()).append("\n");
+			sb.append("Silver: ").append(hfm.getSilver()).append("\n");
+			sb.append("Bronze: ").append(hfm.getBronze()).append("\n");
+			sb.append("Motte: ").append(hfm.getMotte()).append("\n");
+		}
+		return sb.toString();
 	}
 	
 	

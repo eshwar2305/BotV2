@@ -17,7 +17,21 @@ insert into betting("919880338008","24","India","0","2014-03-28 09:27:27");
 
 insert into betting(playerId, gameId, betTeam, score, betDate) values ("919880338008",24,"India",0,2014-03-28 09:27:27)
 
-	
+
+create table Winner(TourID int NOT NULL PRIMARY KEY,Tourname varchar(255),Gold varchar(255),Silver varchar(255),Bronze varchar(255),Motte varchar(255),DATE int);
+INSERT INTO "APP"."WINNER" (TOURID) VALUES (1);
+INSERT INTO "APP"."WINNER" (TourID,TOURNAME) VALUES (1,’ICC World Cup 2015');
+INSERT INTO "APP"."WINNER" (GOLD) VALUES ('Sinchana');
+INSERT INTO "APP"."WINNER" (SILVER) VALUES ('Papumama');
+INSERT INTO "APP"."WINNER" (BRONZE) VALUES (‘Sindhu);
+INSERT INTO "APP"."WINNER" (MOTTE) VALUES (‘Veena’);
+INSERT INTO "APP"."WINNER" (DATE) VALUES (2015);
+
+
+
+
+
+
 
 
 

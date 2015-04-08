@@ -203,6 +203,12 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 		    	fireMsg(grpNumber,sendMsg.toString());  // Help for commands
 		    	return;
 	    	}
+	    	if(msg.contains("hall of fame")){
+	    		sendMsg = getHallOfFame();
+		    	System.out.println("Sending: " + sendMsg.toString());
+		    	fireMsg(grpNumber,sendMsg.toString());  // Hall of fame
+		    	return;
+	    	}
 	    	if(msg.contains("status")){
 	    		sendMsg = getBetterStatus();
 		    	System.out.println("Sending: " + sendMsg.toString());
@@ -316,6 +322,10 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 	    	//Do nothing
 	    	return;
 	    }
+	}
+
+	private StringBuffer getHallOfFame() {
+		return new StringBuffer(m_dbHandle.displayHallOfFame());
 	}
 
 	private StringBuffer getMatchScore() {
