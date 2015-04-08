@@ -541,9 +541,9 @@ public class TryDBAccess
 		}	
 		
 		for(HallOfFame hfm : hfmList){
-			sb.append("--------").append("\n");
+			sb.append("----------------").append("\n");
 			sb.append(hfm.getTourname()).append("\n");
-			sb.append("--------").append("\n");
+			sb.append("----------------").append("\n");
 			sb.append("Gold: ").append(hfm.getGold()).append("\n");
 			sb.append("Silver: ").append(hfm.getSilver()).append("\n");
 			sb.append("Bronze: ").append(hfm.getBronze()).append("\n");

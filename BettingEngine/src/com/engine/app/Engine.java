@@ -198,7 +198,8 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 	    		sendMsg.append("Match - Matches for betting \n");
 	    		sendMsg.append("Points - Points table \n");
 	    		sendMsg.append("Score - Scorecard for match \n");
-	    		sendMsg.append("Bet - Current bets placed \n");	    		
+	    		sendMsg.append("Bet - Current bets placed \n");
+	    		sendMsg.append("Hall of fame - All time greats \n");
 		    	System.out.println("Sending: " + sendMsg.toString());
 		    	fireMsg(grpNumber,sendMsg.toString());  // Help for commands
 		    	return;
