@@ -43,7 +43,8 @@ public class CricinfoWC2015 extends Thread
                 {
                     Game game = new Game();
                     game.setGameId(m_onGoingMatchNumber);
-                    game.setWinTeam(getMatchWinner(m_onGoingMatchNumber));
+                    String matchWinner = getMatchWinner(m_onGoingMatchNumber);  
+                    game.setWinTeam(reformatMatchWinner(matchWinner));
                     game.setTeamA(getTeamA(m_onGoingMatchNumber));
                     game.setTeamB(getTeamB(m_onGoingMatchNumber));
                     System.out.println((new StringBuilder("In Cricinfo - Match number =")).append(m_onGoingMatchNumber).append(" results available").toString());
@@ -68,10 +69,33 @@ public class CricinfoWC2015 extends Thread
         } while(true);
     }
 
-    public CricinfoWC2015(String url)
+    private String reformatMatchWinner(String matchWinner) {
+    	if(matchWinner.equals(StaticValues.STR_KKR))
+    		return "Kolkata";
+    	else if(matchWinner.equals(StaticValues.STR_MI))
+    		return "Mumbai";
+    	else if(matchWinner.equals(StaticValues.STR_CSK))
+    		return "Chennai";
+    	else if(matchWinner.equals(StaticValues.STR_DD))
+    		return "Delhi";
+    	else if(matchWinner.equals(StaticValues.STR_RR))
+    		return "Rajasthan";
+    	else if(matchWinner.equals(StaticValues.STR_RCB))
+    		return "Bangalore";
+    	else if(matchWinner.equals(StaticValues.STR_PUN))
+    		return "Punjab";
+    	else if(matchWinner.equals(StaticValues.STR_HYD))
+    		return "Hyderabad";
+    	else
+    		return matchWinner;
+	}
+
+	public CricinfoWC2015(String url)
     {
         m_listeners = new HashSet();
         m_url = url;
+        if(url.contains("indian-premier-league"))
+        	isIPL=true;
         updateCricInfoDetails();
     }
 
@@ -314,11 +338,24 @@ public class CricinfoWC2015 extends Thread
             e.printStackTrace();
         }
         Elements scores = m_potLiveScore.get(0).getElementsByClass("espni-livescores-scoreline");
-        Element checkWomen = scores.get(0).child(0);
-        if(checkWomen.toString().contains("Women")){
-        	//If there is Women match score - go for next node
-        	scores = m_potLiveScore.get(1).getElementsByClass("espni-livescores-scoreline");
+        if(isIPL){
+        	for(int k=1;k<m_potLiveScore.size();k++){
+                Element checkIPL = scores.get(0).child(0);
+                if(checkIPL.toString().contains("indian-premier-league")){
+                	break;
+                }else{
+                	scores = m_potLiveScore.get(k).getElementsByClass("espni-livescores-scoreline");
+                }
+        	}
+
+        }else{
+            Element checkWomen = scores.get(0).child(0);
+            if(checkWomen.toString().contains("Women")){
+            	//If there is Women match score - go for next node
+            	scores = m_potLiveScore.get(1).getElementsByClass("espni-livescores-scoreline");
+            }
         }
+
         StringBuffer sb = new StringBuffer();
         for(int i = 0; i < scores.size(); i++)
         {
@@ -345,7 +382,7 @@ public class CricinfoWC2015 extends Thread
             System.out.println();
         }
 
-        return sb.toString().replaceAll("&nbsp;ov", "").replaceAll("&amp;", "");
+        return sb.toString().replaceAll("&nbsp;ov", "").replaceAll("&amp;", "").replaceAll("&nbsp;", " ");
     }
 
     public String getScoreSheet(int i)
@@ -389,4 +426,5 @@ public class CricinfoWC2015 extends Thread
     Elements m_potScores;
     Elements m_potStatus;
     Elements m_potLiveScore;
+    boolean isIPL=false;
 }

@@ -103,6 +103,15 @@ public class StaticValues {
 	public static String STR_INDIVIDUAL_BET = "Thanks for placing your bet. Bet details will be released when betting completes.";
 	public static String STR_THANK_YOU = " has placed the bets. Remaining folks please place your bets.";
 	public static String STR_CLOSED_BETTING_MSG = "This is a CLOSED betting game. Please send your bets to this number +1-6502292341 from Whatsapp. Don't type your bets here.";
+	public static String STR_KKR = "Kolkata Knight Riders";
+	public static String STR_MI = "Mumbai Indians";
+	public static String STR_DD = "Delhi Daredevils";
+	public static String STR_RCB = "Royal Challengers Bangalore";
+	public static String STR_CSK = "Chennai Super Kings";
+	public static String STR_HYD = "Sunrisers Hyderabad";
+	public static String STR_RR = "Rajasthan Royals";
+	public static String STR_PUN = "Kings XI Punjab";
+	
 	
 	
 	//Return Error Messages
