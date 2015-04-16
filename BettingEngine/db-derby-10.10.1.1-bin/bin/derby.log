@@ -1,7 +1,7 @@
-Thu Apr 09 04:05:27 UTC 2015 : Apache Derby Network Server - 10.10.1.1 - (1458268) started and ready to accept connections on port 50000
+Wed Apr 15 13:33:58 UTC 2015 : Apache Derby Network Server - 10.10.1.1 - (1458268) started and ready to accept connections on port 50000
 ----------------------------------------------------------------
-Thu Apr 09 04:05:50 UTC 2015:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-014c-9c5a-9fa7-00003de9583b 
+Wed Apr 15 13:34:22 UTC 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-014c-bd49-4579-00003de9583b 
 on database directory /home/rnjnrn/git/BotV2/BettingEngine/db-derby-10.10.1.1-bin/bin/TryDB with class loader sun.misc.Launcher$AppClassLoader@610455d6 
 Loaded from file:/home/rnjnrn/git/BotV2/BettingEngine/db-derby-10.10.1.1-bin/lib/derby.jar
 java.vendor=Oracle Corporation
