@@ -243,14 +243,31 @@ public class CricinfoWC2015 extends Thread
             if(str.contains("tied"))
             {
                 int index1 = str.indexOf("tied");
-                if(str.contains("won"))
-                {
-                    int index2 = str.indexOf("won");
-                    return str.substring(index1 + 5, index2 - 1);
-                } else
-                {
-                    return "DRAW";
-                }
+                int attempt = 0;
+                do{
+                	System.out.println("Attempt no: "+ ++attempt);
+	                if(str.contains("won"))
+	                {
+	                    int index2 = str.indexOf("won");
+	                    return str.substring(index1 + 5, index2 - 1);
+	                } 
+	                
+	                if(attempt == 4) break; // after 3 attempts(30 mins) return the match DRAW
+	                
+	                System.out.println(new Date() + "Match Tied - Sleeping for 10 mins - Waiting for Super Over results");
+	                
+	                try
+	                {
+	                    sleep(m_sampleInterval);
+	                }
+	                catch(InterruptedException e)
+	                {
+	                    e.printStackTrace();
+	                }
+	                
+                }while(true);
+                
+                return "DRAW";
             }
             if(str.contains("No result") || str.contains("abandoned"))
                 return "DRAW";
