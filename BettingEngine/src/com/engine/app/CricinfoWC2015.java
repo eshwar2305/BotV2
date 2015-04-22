@@ -70,21 +70,21 @@ public class CricinfoWC2015 extends Thread
     }
 
     private String reformatMatchWinner(String matchWinner) {
-    	if(matchWinner.equals(StaticValues.STR_KKR))
+    	if(matchWinner.contains(StaticValues.STR_KKR))
     		return "Kolkata";
-    	else if(matchWinner.equals(StaticValues.STR_MI))
+    	else if(matchWinner.contains(StaticValues.STR_MI))
     		return "Mumbai";
-    	else if(matchWinner.equals(StaticValues.STR_CSK))
+    	else if(matchWinner.contains(StaticValues.STR_CSK))
     		return "Chennai";
-    	else if(matchWinner.equals(StaticValues.STR_DD))
+    	else if(matchWinner.contains(StaticValues.STR_DD))
     		return "Delhi";
-    	else if(matchWinner.equals(StaticValues.STR_RR))
+    	else if(matchWinner.contains(StaticValues.STR_RR))
     		return "Rajasthan";
-    	else if(matchWinner.equals(StaticValues.STR_RCB))
+    	else if(matchWinner.contains(StaticValues.STR_RCB))
     		return "Bangalore";
-    	else if(matchWinner.equals(StaticValues.STR_PUN))
+    	else if(matchWinner.contains(StaticValues.STR_PUN))
     		return "Punjab";
-    	else if(matchWinner.equals(StaticValues.STR_HYD))
+    	else if(matchWinner.contains(StaticValues.STR_HYD))
     		return "Hyderabad";
     	else
     		return matchWinner;
