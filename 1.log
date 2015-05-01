@@ -1,179 +1,143 @@
 con is null
 org.apache.derby.jdbc.ClientDriver loaded. 
-Thu Apr 09 04:06:40 UTC 2015 | TryDB.refreshGameStatus | Refresing 
+Fri May 01 08:05:47 UTC 2015 | TryDB.refreshGameStatus | Refresing 
 /home/rnjnrn/git/BotV2
-Thu Apr 09 04:06:41 UTC 2015Updating CricInfo Details
-Thu Apr 09 04:06:41 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:06:41 UTC 2015 | TryDB.forceGetGamesForBetting | Start 
-Thu Apr 09 04:06:41 UTC 2015 | TryDB.forceGetGamesForBetting | End 
-Thu Apr 09 04:06:41 UTC 2015 | TryDB.getGamesForBetting | End 
-Thu Apr 09 04:06:41 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:06:41 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:06:41 UTC 2015 | TryDB.getGamesForBetting | End 
-Thu Apr 09 04:06:42 UTC 2015 | NextMatchDetails| Start 
+Fri May 01 08:05:47 UTC 2015 | TryDB.getGamesForBetting | Start 
+Fri May 01 08:05:47 UTC 2015 | TryDB.forceGetGamesForBetting | Start 
+Fri May 01 08:05:47 UTC 2015Updating CricInfo Details
+Fri May 01 08:05:47 UTC 2015 | TryDB.forceGetGamesForBetting | End 
+Fri May 01 08:05:47 UTC 2015 | TryDB.getGamesForBetting | End 
+Fri May 01 08:05:47 UTC 2015 | TryDB.getGamesForBetting | Start 
+Fri May 01 08:05:47 UTC 2015 | TryDB.GetGamesForBetting | 31 DitchCache false
+Fri May 01 08:05:47 UTC 2015 | TryDB.GetGamesForBetting | 32 DitchCache false
+Fri May 01 08:05:47 UTC 2015 | TryDB.getGamesForBetting | End 
+Fri May 01 08:05:48 UTC 2015 | NextMatchDetails| Start 
  -----------old  games -----------
-Thu Apr 09 04:06:42 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:06:42 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:06:42 UTC 2015 | TryDB.getGamesForBetting | End 
+Fri May 01 08:05:48 UTC 2015 | TryDB.getGamesForBetting | Start 
+Fri May 01 08:05:48 UTC 2015 | TryDB.GetGamesForBetting | 31 DitchCache false
+Fri May 01 08:05:48 UTC 2015 | TryDB.GetGamesForBetting | 32 DitchCache false
+Fri May 01 08:05:48 UTC 2015 | TryDB.getGamesForBetting | End 
  -----------new  games -----------
- New Game : 2
+ New Game : 31
+ New Game : 32
  changed ?  true
-Thu Apr 09 04:06:42 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:06:42 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:06:42 UTC 2015 | TryDB.getGamesForBetting | End 
-Thu Apr 09 04:06:43 UTC 2015 | NextMatchDetails| Sleep Off 
-Reading: 16502292343@ [08-04-2015 22:36]:M2: Chennai vs Delhi at MA Chidambaram Stadium Chepauk Chennai on 09-Apr 20:00 (25.0 Points) 
+Fri May 01 08:05:48 UTC 2015 | TryDB.getGamesForBetting | Start 
+Fri May 01 08:05:48 UTC 2015 | TryDB.GetGamesForBetting | 31 DitchCache false
+Fri May 01 08:05:48 UTC 2015 | TryDB.GetGamesForBetting | 32 DitchCache false
+Fri May 01 08:05:48 UTC 2015 | TryDB.getGamesForBetting | End 
+Fri May 01 08:05:49 UTC 2015 | NextMatchDetails| Sleep Off 
 In Cricinfo - Match number =1 results available
-Thu Apr 09 04:06:47 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@20
-Thu Apr 09 04:06:47 UTC 2015 | Engine.fireMatchResultAvailable | Result available-updating DB -Match number : Win team1:Kolkata
-Reading: 16502292343@ [08-04-2015 22:36]:M2: Chennai vs Delhi at MA Chidambaram Stadium Chepauk Chennai on 09-Apr 20:00 (25.0 Points) 
-Sending: Winner of M1: Kolkata
-Scorecard: 
-1	:Amruth	:47.73	:1
-2	:Anuranjan	:47.73	:1
-3	:Apurva	:47.73	:1
-4	:Chaitra	:47.73	:1
-5	:DNarayan	:47.73	:1
-6	:Eshwar	:47.73	:1
-7	:PapuMama	:47.73	:1
-8	:Ranjana	:47.73	:1
-9	:Ravi	:47.73	:1
-10	:Shashi	:47.73	:1
-11	:Veena	:47.73	:1
-12	:Abhilasha	:0.0	:0
-13	:Ashwin	:0.0	:0
-14	:Hemanth	:0.0	:0
-15	:Prakruthi	:0.0	:0
-16	:Prashanth	:0.0	:0
-17	:Rajiv	:0.0	:0
-18	:Shruthi	:0.0	:0
-19	:Sinchana	:0.0	:0
-20	:Sindhu	:0.0	:0
-21	:Swaroop	:0.0	:0
-
-
-Thu Apr 09 04:06:54 UTC 2015Cricinfo - Sleeping for 10 mins
-Reading: 16502292343@ [08-04-2015 22:37]:Winner of M1: KolkataScorecard: 1	:Amruth	:47.73	:12	:Anuranjan	:47.73	:13	:Apurva	:47.73	:14	:Chaitra	:47.73	:15	:DNarayan	:47.73	:16	:Eshwar	:47.73	:17	:PapuMama	:47.73	:18	:Ranjana	:47.73	:19	:Ravi	:47.73	:110	:Shashi	:47.73	:111	:Veena	:47.73	:112	:Abhilasha	:0.0	:013	:Ashwin	:0.0	:014	:Hemanth	:0.0	:015	:Prakruthi	:0.0	:016	:Prashanth	:0.0	:017	:Rajiv	:0.0	:018	:Shruthi	:0.0	:019	:Sinchana	:0.0	:020	:Sindhu	:0.0	:021	:Swaroop	:0.0	:0 
-Reading: 13026901224@ [08-04-2015 22:37]:Bet 
-Thu Apr 09 04:07:51 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:07:51 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:07:51 UTC 2015 | TryDB.getGamesForBetting | End 
-Thu Apr 09 04:07:51 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:07:51 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:07:51 UTC 2015 | TryDB.getGamesForBetting | End 
-Thu Apr 09 04:07:51 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:07:51 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:07:51 UTC 2015 | TryDB.getGamesForBetting | End 
-Sending: ---------
-Game 2 : Chennai ( DNarayan - PapuMama - Ravi - )[3]
-Vs
-Delhi ( Abhilasha - Hemanth - )[2]
--------
-
-Reading: 16502292343@ [08-04-2015 22:37]:---------Game 2 : Chennai ( DNarayan - PapuMama - Ravi - )[3]VsDelhi ( Abhilasha - Hemanth - )[2]------- 
-Reading: 13026901224@ [08-04-2015 22:38]:Chennai 
-Thu Apr 09 04:08:11 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:08:11 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:08:11 UTC 2015 | TryDB.getGamesForBetting | End 
-Thu Apr 09 04:08:11 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:08:11 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:08:11 UTC 2015 | TryDB.getGamesForBetting | End 
-Thu Apr 09 04:08:11 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:08:11 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:08:11 UTC 2015 | TryDB.getGamesForBetting | End 
-Sending: Eshwar: Chennai(Good Job!)-
-Thu Apr 09 04:08:12 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:08:12 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:08:12 UTC 2015 | TryDB.getGamesForBetting | End 
-Thu Apr 09 04:08:12 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:08:12 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:08:12 UTC 2015 | TryDB.getGamesForBetting | End 
-Thu Apr 09 04:08:12 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:08:12 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:08:12 UTC 2015 | TryDB.getGamesForBetting | End 
-Sending: ---------
-Game 2 : Chennai ( DNarayan - Eshwar - PapuMama - Ravi - )[4]
-Vs
-Delhi ( Abhilasha - Hemanth - )[2]
--------
-
-Reading: 16502292343@ [08-04-2015 22:38]:Eshwar: Chennai(Good Job!)- 
-Reading: 16502292343@ [08-04-2015 22:38]:---------Game 2 : Chennai ( DNarayan - Eshwar - PapuMama - Ravi - )[4]VsDelhi ( Abhilasha - Hemanth - )[2]------- 
-Reading: 13026901224@ [08-04-2015 22:38]:Ranjana proxy chennai 
-Thu Apr 09 04:08:22 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:08:22 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:08:22 UTC 2015 | TryDB.getGamesForBetting | End 
-Thu Apr 09 04:08:22 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:08:22 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:08:22 UTC 2015 | TryDB.getGamesForBetting | End 
-Thu Apr 09 04:08:22 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:08:22 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:08:22 UTC 2015 | TryDB.getGamesForBetting | End 
-Sending: Ranjana: Chennai(Good Job!)-
-Thu Apr 09 04:08:23 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:08:23 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:08:23 UTC 2015 | TryDB.getGamesForBetting | End 
-Thu Apr 09 04:08:23 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:08:23 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:08:23 UTC 2015 | TryDB.getGamesForBetting | End 
-Thu Apr 09 04:08:23 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:08:23 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:08:23 UTC 2015 | TryDB.getGamesForBetting | End 
-Sending: ---------
-Game 2 : Chennai ( DNarayan - Eshwar - PapuMama - Ranjana - Ravi - )[5]
-Vs
-Delhi ( Abhilasha - Hemanth - )[2]
--------
-
-Reading: 16502292343@ [08-04-2015 22:38]:Ranjana: Chennai(Good Job!)- 
-Reading: 16502292343@ [08-04-2015 22:38]:---------Game 2 : Chennai ( DNarayan - Eshwar - PapuMama - Ranjana - Ravi - )[5]VsDelhi ( Abhilasha - Hemanth - )[2]------- 
-Reading: 13026901224@ [08-04-2015 22:38]:Points 
-Sending: 1	:Amruth	:47.73	:1
-2	:Anuranjan	:47.73	:1
-3	:Apurva	:47.73	:1
-4	:Chaitra	:47.73	:1
-5	:DNarayan	:47.73	:1
-6	:Eshwar	:47.73	:1
-7	:PapuMama	:47.73	:1
-8	:Ranjana	:47.73	:1
-9	:Ravi	:47.73	:1
-10	:Shashi	:47.73	:1
-11	:Veena	:47.73	:1
-12	:Abhilasha	:0.0	:0
-13	:Ashwin	:0.0	:0
-14	:Hemanth	:0.0	:0
-15	:Prakruthi	:0.0	:0
-16	:Prashanth	:0.0	:0
-17	:Rajiv	:0.0	:0
-18	:Shruthi	:0.0	:0
-19	:Sinchana	:0.0	:0
-20	:Sindhu	:0.0	:0
-21	:Swaroop	:0.0	:0
-
-Reading: 16502292343@ [08-04-2015 22:38]:1	:Amruth	:47.73	:12	:Anuranjan	:47.73	:13	:Apurva	:47.73	:14	:Chaitra	:47.73	:15	:DNarayan	:47.73	:16	:Eshwar	:47.73	:17	:PapuMama	:47.73	:18	:Ranjana	:47.73	:19	:Ravi	:47.73	:110	:Shashi	:47.73	:111	:Veena	:47.73	:112	:Abhilasha	:0.0	:013	:Ashwin	:0.0	:014	:Hemanth	:0.0	:015	:Prakruthi	:0.0	:016	:Prashanth	:0.0	:017	:Rajiv	:0.0	:018	:Shruthi	:0.0	:019	:Sinchana	:0.0	:020	:Sindhu	:0.0	:021	:Swaroop	:0.0	:0 
-Reading: 13026901224@ [08-04-2015 22:38]:Status 
-Thu Apr 09 04:08:35 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:08:35 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:08:35 UTC 2015 | TryDB.getGamesForBetting | End 
-Thu Apr 09 04:08:35 UTC 2015 | TryDB.getGamesForBetting | Start 
-Thu Apr 09 04:08:35 UTC 2015 | TryDB.GetGamesForBetting | 2 DitchCache false
-Thu Apr 09 04:08:35 UTC 2015 | TryDB.getGamesForBetting | End 
-Sending: ---------
-Game 2 : 
---Khiladis--
-(Abhilasha - DNarayan - Eshwar - Hemanth - PapuMama - Ranjana - Ravi - )[7]
---Sleeping zzzz--
-(Veena - Amruth - Anuranjan - Swaroop - Shruthi - Chaitra - Rajiv - Sindhu - Sinchana - Ashwin - Apurva - Shashi - Prashanth - Prakruthi - )[14]
--------
-
-Reading: 16502292343@ [08-04-2015 22:38]:---------Game 2 : --Khiladis--(Abhilasha - DNarayan - Eshwar - Hemanth - PapuMama - Ranjana - Ravi - )[7]--Sleeping zzzz--(Veena - Amruth - Anuranjan - Swaroop - Shruthi - Chaitra - Rajiv - Sindhu - Sinchana - Ashwin - Apurva - Shashi - Prashanth - Prakruthi - )[14]------- 
-Reading: 13026901224@ [08-04-2015 22:38]:Hall of fame 
-Sending: --------
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@20
+In Cricinfo - Match number =2 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@21
+In Cricinfo - Match number =3 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@22
+In Cricinfo - Match number =4 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@23
+In Cricinfo - Match number =5 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@24
+In Cricinfo - Match number =6 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@25
+In Cricinfo - Match number =7 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@26
+In Cricinfo - Match number =8 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@27
+In Cricinfo - Match number =9 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@28
+In Cricinfo - Match number =10 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@29
+In Cricinfo - Match number =11 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@2a
+In Cricinfo - Match number =12 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@2b
+In Cricinfo - Match number =13 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@2c
+In Cricinfo - Match number =14 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@2d
+In Cricinfo - Match number =15 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@2e
+In Cricinfo - Match number =16 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@2f
+In Cricinfo - Match number =17 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@30
+Attempt no: 1
+In Cricinfo - Match number =18 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@31
+In Cricinfo - Match number =19 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@32
+In Cricinfo - Match number =20 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@33
+In Cricinfo - Match number =21 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@34
+In Cricinfo - Match number =22 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@35
+In Cricinfo - Match number =23 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@36
+In Cricinfo - Match number =24 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@37
+In Cricinfo - Match number =25 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@38
+In Cricinfo - Match number =26 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@39
+In Cricinfo - Match number =27 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@3a
+In Cricinfo - Match number =28 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@3b
+In Cricinfo - Match number =29 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@3c
+In Cricinfo - Match number =30 results available
+Fri May 01 08:05:51 UTC 2015 | Engine.fireMatchResultAvailable | lastmatch com.engine.dataobject.Game@3d
+Fri May 01 08:05:51 UTC 2015Cricinfo - Sleeping for 10 mins
+Reading: 13026901224@ [01-05-2015 02:37]:Hall of fame 
+Sending: ------------------------
 ICC World Cup 2015
---------
-Gold: Sinchana
-Silver: Papumama
+------------------------
+Gold   : Sinchana
+Silver : Papumama
 Bronze: Sindhu
-Motte: Veena
+Motte : Veena
 
-Reading: 16502292343@ [08-04-2015 22:38]:--------ICC World Cup 2015--------Gold: SinchanaSilver: PapumamaBronze: SindhuMotte: Veena 
+Reading: 919916394597 [01-05-2015 02:42]:Punjab rajasthan 
+Fri May 01 08:10:54 UTC 2015 | TryDB.getGamesForBetting | Start 
+Fri May 01 08:10:54 UTC 2015 | TryDB.GetGamesForBetting | 31 DitchCache false
+Fri May 01 08:10:54 UTC 2015 | TryDB.GetGamesForBetting | 32 DitchCache false
+Fri May 01 08:10:54 UTC 2015 | TryDB.getGamesForBetting | End 
+Fri May 01 08:10:54 UTC 2015 | TryDB.getGamesForBetting | Start 
+Fri May 01 08:10:54 UTC 2015 | TryDB.GetGamesForBetting | 31 DitchCache false
+Fri May 01 08:10:54 UTC 2015 | TryDB.GetGamesForBetting | 32 DitchCache false
+Fri May 01 08:10:54 UTC 2015 | TryDB.getGamesForBetting | End 
+Fri May 01 08:10:54 UTC 2015 | TryDB.getGamesForBetting | Start 
+Fri May 01 08:10:54 UTC 2015 | TryDB.GetGamesForBetting | 31 DitchCache false
+Fri May 01 08:10:54 UTC 2015 | TryDB.GetGamesForBetting | 32 DitchCache false
+Fri May 01 08:10:54 UTC 2015 | TryDB.getGamesForBetting | End 
+Fri May 01 08:10:54 UTC 2015 | TryDB.getGamesForBetting | Start 
+Fri May 01 08:10:54 UTC 2015 | TryDB.GetGamesForBetting | 31 DitchCache false
+Fri May 01 08:10:54 UTC 2015 | TryDB.GetGamesForBetting | 32 DitchCache false
+Fri May 01 08:10:54 UTC 2015 | TryDB.getGamesForBetting | End 
+Sending: Shashi: Punjab(Good Job!)-Rajasthan(Good Job!)-
+Fri May 01 08:10:55 UTC 2015 | TryDB.getGamesForBetting | Start 
+Fri May 01 08:10:55 UTC 2015 | TryDB.GetGamesForBetting | 31 DitchCache false
+Fri May 01 08:10:55 UTC 2015 | TryDB.GetGamesForBetting | 32 DitchCache false
+Fri May 01 08:10:55 UTC 2015 | TryDB.getGamesForBetting | End 
+Fri May 01 08:10:55 UTC 2015 | TryDB.getGamesForBetting | Start 
+Fri May 01 08:10:55 UTC 2015 | TryDB.GetGamesForBetting | 31 DitchCache false
+Fri May 01 08:10:55 UTC 2015 | TryDB.GetGamesForBetting | 32 DitchCache false
+Fri May 01 08:10:55 UTC 2015 | TryDB.getGamesForBetting | End 
+Fri May 01 08:10:55 UTC 2015 | TryDB.getGamesForBetting | Start 
+Fri May 01 08:10:55 UTC 2015 | TryDB.GetGamesForBetting | 31 DitchCache false
+Fri May 01 08:10:55 UTC 2015 | TryDB.GetGamesForBetting | 32 DitchCache false
+Fri May 01 08:10:55 UTC 2015 | TryDB.getGamesForBetting | End 
+Fri May 01 08:10:55 UTC 2015 | TryDB.getGamesForBetting | Start 
+Fri May 01 08:10:55 UTC 2015 | TryDB.GetGamesForBetting | 31 DitchCache false
+Fri May 01 08:10:55 UTC 2015 | TryDB.GetGamesForBetting | 32 DitchCache false
+Fri May 01 08:10:55 UTC 2015 | TryDB.getGamesForBetting | End 
+Sending: ---------
+Game 31 : Delhi ( Ashwin - DNarayan - Eshwar - Hemanth - )[4]
+Vs
+Punjab ( Chaitra - PapuMama - Prashanth - Rajiv - Shashi - Sinchana - Veena - )[7]
+-------
+Game 32 : Mumbai ( DNarayan - Eshwar - PapuMama - Rajiv - Sinchana - Veena - )[6]
+Vs
+Rajasthan ( Ashwin - Chaitra - Hemanth - Prashanth - Shashi - )[5]
+-------
+
