@@ -1,24 +1,18 @@
 package com.engine.app;
-import java.io.BufferedReader;
-
-import com.engine.dataaccess.*;
-import com.engine.dataobject.*;
-import com.engine.util.OSValidator;
-
-import java.sql.Timestamp;
-
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
+
+import com.engine.dataaccess.TryDBAccess;
+import com.engine.dataobject.Game;
+import com.engine.dataobject.StaticValues;
+import com.engine.util.OSValidator;
 
 
 public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchListener{
@@ -43,6 +37,22 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 	        "-c",
 	        writer_configpath,
 	        "-s",
+	        //"13026901224-1394919313", //Send msg to Terminator
+	        //"13026901224", //Send msg to Eshu number
+	        //"13026901224-1333685017", -- BG family
+	        //"919686811944-1394712848", //- BAri talk
+	        //"13026901224-1423376234", // - Y-Testing
+	        "15857890554-1423150978", // WC-2015
+	        "test"
+	    };
+	
+	String[] m_cmdsetSubject = {
+	        "python",
+	        writer_botpath,
+	        "demos",
+	        "-c",
+	        writer_configpath,
+	        "-z",
 	        //"13026901224-1394919313", //Send msg to Terminator
 	        //"13026901224", //Send msg to Eshu number
 	        //"13026901224-1333685017", -- BG family
@@ -91,6 +101,7 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 	@Override
 	public void fireNextMatchDetailsAvailable(ArrayList<Game> gameList) {
 		StringBuffer sendMsg =  new StringBuffer();
+		StringBuffer subject = new StringBuffer();
 		for(int i=0;i<gameList.size();i++){
 			Game g = gameList.get(i);
 			
@@ -109,6 +120,12 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 			sendMsg.append(sdf.format(new Timestamp(t)));
 			sendMsg.append(" (").append(g.getScorePerPlayer()).append(" Points)");
 			sendMsg.append("\n");
+			
+			if(i!=0)
+				subject.append(" & ");
+			subject.append(g.getTeamA().substring(0, 3));
+			subject.append("/");
+			subject.append(g.getTeamB().substring(0, 3));
 		}	
 		
 		if(!isBettingOpen()){
@@ -116,6 +133,7 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 			sendMsg.append(StaticValues.STR_CLOSED_BETTING_MSG);
 		}
 		fireMsg(grpNumber,sendMsg.toString());
+		fireChangeSubject(grpNumber, subject.toString());
 
 	}
 
@@ -439,6 +457,33 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
     		e.printStackTrace();
     	}
 	}
+	
+	private void fireChangeSubject(String number,String subject) {
+		if(number.contains("@")){
+			number = number.substring(0, 11);
+		}
+		//System.out.println("Number :"+ number);
+		m_cmdsetSubject[6] = number;
+		m_cmdsetSubject[7] = subject.toString();
+    	try {
+    		System.out.println("Changing subject line of the group");
+    		Process p = Runtime.getRuntime().exec(m_cmd);
+    		try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+    		/*BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
+    		while(reader.readLine() != null){
+    			System.out.println(reader.readLine());
+    		}*/
+    		
+    	} catch (IOException e) {
+    		e.printStackTrace();
+    	}
+	}
+	
 
 	private StringBuffer getCurrentBetSheet() {
 		return new StringBuffer(m_dbHandle.displayCurrentBet());		
