@@ -75,7 +75,8 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 		} 
 		m_cmd[1] = writer_botpath;
 		m_cmd[4] = writer_configpath;
-		
+		m_cmdsetSubject[1] = writer_botpath;
+		m_cmdsetSubject[4] = writer_configpath;		
 	}
 	
 	public void spark() {
