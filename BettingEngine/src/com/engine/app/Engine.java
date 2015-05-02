@@ -467,7 +467,7 @@ public class Engine implements LogFileTailerListener,CricinfoListener,NextMatchL
 		m_cmdsetSubject[7] = subject.toString();
     	try {
     		System.out.println("Changing subject line of the group");
-    		Process p = Runtime.getRuntime().exec(m_cmd);
+    		Process p = Runtime.getRuntime().exec(m_cmdsetSubject);
     		try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
