@@ -217,6 +217,11 @@ class DemosArgParser(YowArgParser):
                                                                      "wait for server receipt and exit",
                               metavar=("phone", "message"), nargs = 2)
 
+        setsubjectOpts = self.add_argument_group("Set group subject")
+        setsubjectOpts.add_argument('-z', '--zet', action="store", help = "Set group subject, "
+                                                                     "wait for server receipt and exit",
+                              metavar=("phone", "message"), nargs = 2)
+
     def process(self):
         super(DemosArgParser, self).process()
         if self.args["yowsup"]:
@@ -225,6 +230,8 @@ class DemosArgParser(YowArgParser):
             self.startEcho()
         elif self.args["send"]:
             self.startSendClient()
+        elif self.args["zet"]:
+            self.startSetSubjectClient()
         else:
             return False
         return True
@@ -270,6 +277,21 @@ class DemosArgParser(YowArgParser):
 
         try:
             stack = sendclient.YowsupSendStack(credentials, [([self.args["send"][0], self.args["send"][1]])],
+                                               self.args["moxie"])
+            stack.start()
+        except KeyboardInterrupt:
+            print("\nYowsdown")
+            sys.exit(0)
+
+    def startSetSubjectClient(self):
+        from yowsup.demos import subjectchangeclient
+        credentials = self._getCredentials()
+        if not credentials:
+            print("Error: You must specify a configuration method")
+            sys.exit(1)
+
+        try:
+            stack = subjectchangeclient.YowsupSetSubjectStack(credentials, [([self.args["zet"][0], self.args["zet"][1]])],
                                                self.args["moxie"])
             stack.start()
         except KeyboardInterrupt:
